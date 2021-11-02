@@ -1,4 +1,4 @@
-{% set version = "9.0.3" %}
+{% set version = "9.1.0rc4" %}
 {% set build = 5 %}
 
 {% set minor_version = ".".join(version.split(".")[:2]) %}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: http://www.vtk.org/files/release/{{ minor_version }}/VTK-{{ version }}.tar.gz
-  sha256: bc3eb9625b2b8dbfecb6052a2ab091fc91405de4333b0ec68f3323815154ed8a
+  sha256: 405a8fd9cbcef4434d0ab2a3f135e2a0b19ba7d17c8e63ba18735980ef2f4981
   patches:
     - patches/7731.patch
 
